@@ -11,3 +11,4 @@ buf1[21] = 300;
 console.log('buf1[21]:', buf1[21]);
 buf1[22] = 3.1415;
 console.log('buf1[22]:', buf1[22]);
+console.log('buffer -> tostring:', buf.toString('utf-8',0,18))
