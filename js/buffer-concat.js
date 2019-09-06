@@ -1,5 +1,6 @@
 var fs = require('fs');
 var rs = fs.createReadStream('../README.md',{highWaterMark:11});
+rs.setEncoding('utf8');
 var data = '';
 rs.on('data', function(chunk){
     data += chunk;// data = data.toString() + chunk.toString();
